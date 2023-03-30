@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact form</title>
+        <link rel="stylesheet" href="perpus.html">
+
+
+        <style>
+            html,body {
+                min-height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                color:rgb(19, 94, 160)
+            }
+            h1 {
+                margin: 0 0 20px;
+                font-weight: 400;
+                color:rgb(100, 173, 237);
+            }
+            p {
+            margin: 0 0 5px;
+            }
+            .main-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: cadetblue;
+            }
+            form {
+                padding: 25px;
+                margin: 25px;
+                box-shadow: 0 2px 5px rgb(40, 55, 68);
+                background: aliceblue;
+            }
+            .fas {
+                margin: 25px 10px 0;
+                font-size: 72px;
+                color:aliceblue;
+            }
+            .fa-envalope {
+                transform: rotate(-20deg);
+            }
+            .fa-at , .fa-mail-bulk{
+                transform: rotate(10deg);
+            }
+            input, textarea {
+                width: calc(100%  18px);
+                padding: 8px;
+                margin-bottom: 20px;
+                border: 1px solid cyan;
+                outline: none;
+            }
+            input::placeholder {
+                color:rgb(26, 91, 148);
+            }
+            button{
+                width: 100px;
+                padding: 10px;
+                border: none;
+                background: aquamarine;
+                font-size: 16px;
+                font-weight: 400;
+                color: azure;
+            }
+            button:hover {
+                background: aquamarine;
+            }
+            @media (min-widht: 568px) {
+                .main-block {
+                    flex-direction: row;
+
+                    width: 50%;
+                }
+                .fa-envalope {
+                    margin-left: 20%;
+                }
+                .fa-at {
+                    margin-top: -10%;
+                    margin-left: 65%;
+                }
+                .fa-mail-bulk {
+                    margin-top: 2%;
+                    margin-left: 28%;
+                }
+            }
+            </style>
+        </head>
+        <body>
+        <div class="main-block">
+            <div class=":left-part">
+              <i class="fas fa-envalope"></i>
+              <i class="fas fa-at"></i>
+              <i class="fas fa-mail-bulk"></i>
+            </div>
+            <form action="/">
+                <h1>Data Buku</h1>
+                <div class="info">
+                    
+                    <tr>
+                        <td><b>Kode buku</b></td>
+                        <td></td>
+                        <td><input type="Kode Buku" size="50"></td>
+                        </tr>
+                   <tr>
+                    <h2></h2>
+                        <td><b>Judul Buku</b></td>
+                        <td></td>
+                        <td><input type="Judul Buku" size="25"></td>
+                        </tr>
+                    <tr>
+                    <h2></h2>
+                        <td><b>Pengarang</b></td>
+                        <td></td>
+                        <td><input type="Pengarang" size="50"></td>
+                        </tr>
+                    <tr>
+                    <h2></h2>
+                        <td><b>Penerbit</b></td>
+                        <td></td>
+                        <td><input type="Penerbit" size="50"></td>
+                    </tr>
+                    <tr>
+                    <h2></h2>
+                        <td><b>ISBN</b></td>
+                        <td></td>
+                        <td><input type="ISBN" size="55"></td>
+                        </tr>
+                     <tr>
+                    <h2></h2>
+                        <td><b>Kategori Buku</b></td>
+                        <td></td>
+                        <td><input type="Kategori Buku" size="50"></td>
+                        </tr>
+                        <tr>
+                         <h2></h2>
+                         <td><b>Kategori Buku</b></td>
+                         <td></td>
+                        <td><input type="Kategori Buku" size="45"></td>
+                        </tr>
+
+                    </div>
+
+                    <button type="submit" href="/">Submit</button>
+                    <a href="perpus.html">Kembali ke menu</a>
+                </form>
+            </div>
+        </body>
+    </html>
+    
